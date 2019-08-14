@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)file:///C:/Users/Peterr/Desktop/te.html -->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>W3.CSS Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./index_files/w3.css">
+    <link rel="stylesheet" href="./index_files/css">
+    <style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style> </head>
+  <body>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index: 3; width: 300px; font-weight: bold; display: none;"
+      id="mySidebar"><br>
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+        style="width:100%;font-size:22px">Close Menu</a>
+      <div class="w3-container">
+        <h3 class="w3-padding-64">Introduction to Information Technology</h3>
+      </div>
+      <div class="w3-bar-block"> <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+        <a href="Personal%20Information/Personal%20Information.html" onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white">Personal Information</a>
+        <a href="Week%202/Week%202.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Interest
+          In IT</a> <a href="Week%203/Week%203.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ideal
+          Job</a> <a href="Week%204/Week%204.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Personal
+          Profile</a> <a href="Week%205/Week%205.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Project
+          Idea</a> </div>
+    </nav>
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+      <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+      <span>Peter Tran</span> </header>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+      <!-- Header -->
+      <div class="w3-container" style="margin-top:80px" id="showcase">
+        <h1 class="w3-jumbo">Assignment One: <br>
+          My Profile</h1>
+        <h1 class="w3-xxxlarge w3-text-red"><b>Home</b></h1>
+      </div>
+      <div id="modal01" class="w3-modal w3-black" style="padding-top: 0px; display: none;"
+        onclick="this.style.display='none'"> <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image" src="file:///C:/w3images/livingroom.jpg">
+          <p id="caption">Light, white and tight scandinavian design</p>
+        </div>
+      </div>
+      <div class="w3-container" id="services" style="margin-top:75px">
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <p>Peter Tran -s3507258</p>
+        <p>This website showcases our weekly's tutorial and information about
+          relevant information that we had to complete alongside other important
+          information such as what our teacher has shown us throughout our
+          weekly's class. Each week, we are taught something new and asked to
+          demonstrate or provide relevant evidence such as photos, and videos
+          that can back up how to perform the task and applications that are
+          given to us</p>
+      </div>
+      <div class="w3-row-padding"> </div>
+    </div>
+    <!-- W3.CSS Container -->
+    <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+      <p class="w3-right">s3507258</p>
+    </div>
+    <script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script> </body>
+</html>
