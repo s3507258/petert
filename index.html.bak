@@ -23,12 +23,12 @@ body {font-size:16px;}
         <h3 class="w3-padding-64">Introduction to Information Technology</h3>
       </div>
       <div class="w3-bar-block"> <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-        <a href="Personal%20Information/Personal%20Information.html" onclick="w3_close()"
-          class="w3-bar-item w3-button w3-hover-white">Personal Information</a>
-        <a href="Week%202/Week%202.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Interest
-          In IT</a> <a href="Week%203/Week%203.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ideal
-          Job</a> <a href="Week%204/Week%204.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Personal
-          Profile</a> <a href="Week%205/Week%205.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Project
+        <a href="personal/Personal.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Personal
+          Information</a> <a href="../interest/interest.html" onclick="w3_close()"
+          class="w3-bar-item w3-button w3-hover-white">Interest In IT</a> <a href="ideal/ideal.html"
+          onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ideal
+          Job</a> <a href="../personal/Personal.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Personal
+          Profile</a> <a href="project/Project.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Project
           Idea</a> </div>
     </nav>
     <!-- Top menu on small screens -->
